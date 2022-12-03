@@ -1,5 +1,5 @@
 $(function () {
-  var people = [];
+  var section = 0;
 
   $.getJSON("database/vids.json", function (data) {
     $.each(data.video, function (i, f) {
@@ -60,7 +60,14 @@ $(function () {
         <!-- Beasts of No Nation - OPEN -->
 
     `;
-      $("#movies").append(tblRow);
+
+      if (i % 4 === 0) {
+        section++;
+        $(`<div class="card-deck section-` + section + `"></div>`).appendTo(
+          "#movies"
+        );
+      }
+      $(tblRow).appendTo(".section-" + section);
     });
   });
 });
