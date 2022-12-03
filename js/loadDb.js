@@ -57,7 +57,7 @@ const loadBanner = $.getJSON("database/vids.json", function (data) {
     <div class="carousel-item">
       <img
         class="d-block carouselcustomaspectratio"
-        src="media/images/banner/banner_stranger_things.png"
+        src="media/images/banner/${f.thumbnail}"
         alt="Second slide"
       />
       <div
@@ -65,18 +65,12 @@ const loadBanner = $.getJSON("database/vids.json", function (data) {
       >
         <h1>${f.title}</h1>
         <p>
-          <a href="#">2016</a> | +16 | 3 Seasons | <a href="#">TV Shows</a>
+          <a href="#">${f.year}</a> | ${f.ageRestriction} | ${f.seasons} Seasons | <a href="#">${f.title}</a>
         </p>
         <p class="margin-top-under-sm">
-          When a young boy vanishes, a small town uncovers a mystery
-          involving secret experiments, terrifying supernatural forces and
-          one strange little girl.
+        ${f.summary}
         </p>
-        <p>
-          Starring: <a href="#">Winona Ryder</a>,
-          <a href="#">David Harbour</a>, <a href="#">Finn Wolfhard</a>
-        </p>
-        <p>Creators: <a href="#">The Duffer Brothers</a></p>
+
         <div class="margin-top-under-sm">
           <a
             href="#"
@@ -105,12 +99,8 @@ const loadBanner = $.getJSON("database/vids.json", function (data) {
   `;
 
     $(tblRow).appendTo("#Carousel");
-    // if (i === 0) {
-    //   $("carousel-inner").first().addClass("active");
-    // }
+    if (i === 0) {
+      $(".carousel-item").first().addClass("active");
+    }
   });
-});
-
-$(document).ready(function () {
-  console.log("ready!");
 });
