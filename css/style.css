@@ -26,6 +26,12 @@ h5 {
   margin: 10px 0 40px 0;
 }
 
+.center {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
 .logo {
   padding: 0;
   margin-right: 100px;
