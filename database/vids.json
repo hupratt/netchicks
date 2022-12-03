@@ -33,5 +33,34 @@
       "thumbnail": "beasts_of_no_nation.jpg",
       "title": "Beasts of No Nation"
     }
+  ],
+  "banner": [
+    {
+      "thumbnail": "banner_stranger_things.png",
+      "title": "Stranger Things",
+      "year": 2016,
+      "ageRestriction": "+16",
+      "seasons": 3,
+      "movieType": "TV Shows",
+      "summary": "When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces and one strange little girl."
+    },
+    {
+      "thumbnail": "banner_money_heist.jpg",
+      "title": "Money Heist",
+      "year": 2017,
+      "ageRestriction": "+16",
+      "seasons": 3,
+      "movieType": "TV Shows",
+      "summary": "Eight thieves take hostages and lock themselves in the Royal Mint of Spain as a criminal mastermind manipulates the police to carry out his plan."
+    },
+    {
+      "thumbnail": "banner_the_witcher.png",
+      "title": "The Witcher",
+      "year": 2019,
+      "ageRestriction": "+16",
+      "seasons": 2,
+      "movieType": "TV Shows",
+      "summary": "Geralt of Rivia, a mutated monster-hunter for hire, journeys toward his destiny in a turbulent world where people often prove more wicked than beasts."
+    }
   ]
 }
